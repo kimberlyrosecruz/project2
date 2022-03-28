@@ -1,0 +1,217 @@
+*{box-sizing: border-box;}
+:root{
+  --primaryColor: #49d0e5;
+  --primaryLight: #85ffff;
+  --primaryDark: #009fb3;
+  --secondaryColor: #cd56e5;
+  --secondaryLight: #ff89ff;
+  --secondaryDark: #991db2;
+}
+.titlecontainer{
+  position: relative;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.imagesContainer1,.imagesContainer2,.imagesContainer3,.imagesContainer4{
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+}
+.imagesContainer1{
+  margin-left: 5%;
+  margin-top: 10%;
+}
+.imagesContainer2{
+  margin-top: 5%;
+  margin-left: 45%;
+}
+.imagesContainer3{
+  margin-left: auto;
+  margin-top: 5%;
+  margin-right: auto;
+}
+.imagesContainer4{
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.image1{
+  width: 100%;
+  border: ridge 10px lightgray;
+  animation: Invert 0.3s forwards;
+  animation-iteration-count: 4;
+  animation-delay: 5s;
+  animation-direction: alternate;
+}
+@keyframes Invert {
+  0%{filter: invert(0%);}
+  100%{filter: invert(100%);}
+}
+.title1{
+  position: absolute;
+  top: 10%;
+  left: 22%;
+  color: var(--primaryColor);
+  font-size: 5em;
+  font-family: forte;
+  animation: zoomMSG 1s forwards;
+}
+.title2{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  color: var(--secondaryDark);
+  font-size: 5em;
+  font-family: forte;
+  animation: zoomMSG 1s forwards;
+  animation-delay: 1s;
+}
+.title3{
+  position: absolute;
+  top: 50%;
+  left: 22%;
+  color: var(--primaryDark);
+  font-size: 5em;
+  font-family: forte;
+  animation: zoomMSG 1s forwards;
+  animation-delay: 2s;
+}
+.title4{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  color: var(--secondaryLight);
+  font-size: 5em;
+  font-family: forte;
+  animation: zoomMSG 1s forwards;
+  animation-delay: 3s;
+}
+@keyframes zoomMSG {
+  0%{transform: scale(0) translate(0px,0px);}
+  50%{transform: scale(0.5) translate(-100px,-50px);}
+  100%{transform: scale(1) translate(150px,55px);}
+}
+.image2{
+  width: 100%;
+  border: ridge 10px lightgray;
+}
+.p_image2{
+  position: absolute;
+  background-color: rgba(50,50,50,0.8);
+  color: gold;
+  top: 7%;
+  left: 0%;
+  right: 0%;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+
+}
+.image3{
+  width: 100%;
+  border: ridge 10px lightgray;
+}
+.p_image3{
+  position: absolute;
+  background-color: rgba(50,50,50,0.8);
+  color: gold;
+  top: 7%;
+  left: 0%;
+  right: 0%;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+.image4{
+  width: 100%;
+  border: ridge 10px lightgray;
+}
+.p_image4{
+  position: absolute;
+  background-color: rgba(50,50,50,0.8);
+  color: gold;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+.image5{
+  width: 100%;
+  border: ridge 10px lightgray;
+}
+.p_image5{
+  position: absolute;
+  background-color: rgba(50,50,50,0.8);
+  color: gold;
+  top: 7%;
+  left: 0%;
+  right: 0%;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav1{
+  position: absolute;
+  left: 10%;
+  bottom: 0px;
+}
+.t1image{
+  color: var(--primaryColor);
+  font-size: 100px;
+  font-family: forte;
+  text-align: center;
+}
+.nav2{
+  position: absolute;
+  left: 25%;
+  bottom: 0px;
+}
+.t2image{
+  color: var(--secondaryDark);
+  font-size: 100px;
+  font-family: forte;
+  text-align: center;
+}
+.nav3{
+  position: absolute;
+  left: 50%;
+  top: 0px;
+}
+.t3image{
+  color: var(--primaryDark);
+  font-size: 100px;
+  font-family: forte;
+  text-align: center;
+}
+.nav4{
+  position: absolute;
+  left: 65%;
+  bottom: 0px;
+}
+.t4image{
+  color: var(--secondaryLight);
+  font-size: 100px;
+  font-family: forte;
+  text-align: center;
+}
+.nav5{
+  position: absolute;
+  left: 25%;
+  top: 25%;
+}
+.external{
+  background-color: rgba(50,50,50,0.8);
+  color: var(--primaryColor);
+  font-size: 25px;
+  text-align: center;
+  padding: 15px;
+}
+footer{
+  text-align: center;
+  background-color: var(--secondaryDark);
+  color: var(--primaryColor);
+  padding: 15px;
+}
